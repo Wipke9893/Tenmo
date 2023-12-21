@@ -1,0 +1,227 @@
+[33mcommit 7de3d7b306bc5384d2a51c4ef0aed39ba589136b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: f9c69b9 2571261
+Author: Tiffany Alcorn <alcorn.tiff@gmail.com>
+Date:   Fri Nov 3 10:06:08 2023 -0400
+
+    uh oh
+
+[33mcommit 25712611af7a945b97c7892f65709ec2ad309809[m
+Author: Logan Vesterfelt <loganvesterfelt@gmail.com>
+Date:   Thu Nov 2 15:03:53 2023 -0400
+
+    testing added
+
+ .../tenmo/controller/TransferController.java       | 21 [32m+++++++[m[31m--[m
+ .../com/techelevator/tenmo/dao/AccountDao.java     |  2 [31m-[m
+ .../com/techelevator/tenmo/dao/JdbcAccountDao.java | 18 [31m--------[m
+ .../techelevator/tenmo/dao/JdbcTransfersDao.java   | 33 [32m+++++++[m[31m-------[m
+ .../com/techelevator/tenmo/dao/TransfersDao.java   |  5 [32m+[m[31m-[m
+ .../com/techelevator/tenmo/model/Transfer.java     | 12 [32m++[m[31m---[m
+ .../dao/JdbcAccountDaoIntegrationTest.java         | 53 [32m++++++++++++++++++++++[m
+ .../dao/JdbcTransfersDaoIntegrationTest.java       | 29 [32m++++++++++[m[31m--[m
+ tenmo-server/src/test/resources/test-data.sql      |  2 [32m+[m[31m-[m
+ 9 files changed, 121 insertions(+), 54 deletions(-)
+
+[33mcommit f9c69b9f5fd5c83807baaac37fba0e2bb97d91e8[m
+Merge: 6f476ba 61d7c85
+Author: Tiffany Alcorn <alcorn.tiff@gmail.com>
+Date:   Thu Nov 2 13:13:51 2023 -0400
+
+    Merge branch 'main' of https://git.techelevator.com/campuses/cincy/sep-2023/java/student-pairs/capstone-2/capstone-2-team-0
+
+[33mcommit 61d7c8529ec7c6b6a438cd3cbf6c4a740f2c7de7[m
+Author: Logan Vesterfelt <loganvesterfelt@gmail.com>
+Date:   Thu Nov 2 13:01:07 2023 -0400
+
+    m
+
+ .../techelevator/tenmo/dao/JdbcTransfersDao.java   |  65 [32m++++++++[m[31m-----[m
+ .../dao/JdbcTransfersDaoIntegrationTest.java       | 103 [32m++++++++++++[m[31m---------[m
+ tenmo-server/src/test/resources/test-data.sql      |   9 [32m+[m[31m-[m
+ 3 files changed, 105 insertions(+), 72 deletions(-)
+
+[33mcommit 6f476bad6a07583c7b39dc90aab487e7817e811e[m
+Merge: e5dc625 4149002
+Author: Tiffany Alcorn <alcorn.tiff@gmail.com>
+Date:   Thu Nov 2 10:52:51 2023 -0400
+
+    Merge branch 'main' of https://git.techelevator.com/campuses/cincy/sep-2023/java/student-pairs/capstone-2/capstone-2-team-0
+
+[33mcommit e5dc6250a1dfb9be7037752403f72d22a8e5f81b[m
+Author: Tiffany Alcorn <alcorn.tiff@gmail.com>
+Date:   Thu Nov 2 10:52:45 2023 -0400
+
+    uh oh
+
+ .../main/java/com/techelevator/tenmo/controller/AccountController.java | 3 [32m++[m[31m-[m
+ tenmo-server/src/main/java/com/techelevator/tenmo/dao/AccountDao.java  | 2 [32m+[m[31m-[m
+ .../src/main/java/com/techelevator/tenmo/dao/JdbcAccountDao.java       | 3 [32m+++[m
+ .../src/main/java/com/techelevator/tenmo/dao/JdbcTransfersDao.java     | 2 [32m+[m[31m-[m
+ 4 files changed, 7 insertions(+), 3 deletions(-)
+
+[33mcommit 41490028df851b61c1405429b9adbee40474f5aa[m
+Author: Logan Vesterfelt <loganvesterfelt@gmail.com>
+Date:   Thu Nov 2 10:43:31 2023 -0400
+
+    m
+
+ .../java/com/techelevator/tenmo/model/Account.java |  5 [32m+[m[31m-[m
+ .../dao/JdbcTransfersDaoIntegrationTest.java       | 90 [32m++++++++++++++++++++++[m
+ 2 files changed, 92 insertions(+), 3 deletions(-)
+
+[33mcommit 21130a0298da928a71d8191018b1472918dbd08b[m
+Author: Logan Vesterfelt <loganvesterfelt@gmail.com>
+Date:   Thu Nov 2 09:32:24 2023 -0400
+
+    m
+
+ .../tenmo/controller/AuthenticationController.java    | 19 [32m++++++++++++++[m[31m-----[m
+ 1 file changed, 14 insertions(+), 5 deletions(-)
+
+[33mcommit 7e9568571ee43ccdf5b9e7bdac1246848942bb4a[m
+Merge: 15f7a08 2bdbab5
+Author: Logan Vesterfelt <loganvesterfelt@gmail.com>
+Date:   Wed Nov 1 15:33:51 2023 -0400
+
+    Merge branch 'main' of https://git.techelevator.com/campuses/cincy/sep-2023/java/student-pairs/capstone-2/capstone-2-team-0
+
+[33mcommit 15f7a089a2fd41a54be57173bc6b5a34cf50858c[m
+Author: Logan Vesterfelt <loganvesterfelt@gmail.com>
+Date:   Wed Nov 1 15:33:46 2023 -0400
+
+    m
+
+ tenmo-database/tenmo.sql                           | 22 [32m+++++++++++++++++++[m[31m---[m
+ .../com/techelevator/tenmo/dao/JdbcAccountDao.java |  1 [32m+[m
+ 2 files changed, 20 insertions(+), 3 deletions(-)
+
+[33mcommit 2bdbab5b35fb30eb9d2dc8c3e6244ede87d7906c[m
+Author: Wipke9893 <Wipke9893@yahoo.com>
+Date:   Wed Nov 1 15:32:15 2023 -0400
+
+    testing
+
+ tenmo-database/tenmo.sql                           | 13 [32m+++++++++[m[31m--[m
+ .../com/techelevator/tenmo/dao/JdbcAccountDao.java |  1 [32m+[m
+ tenmo-server/src/test/resources/test-data.sql      | 26 [32m++++++++++++++++++++++[m
+ 3 files changed, 38 insertions(+), 2 deletions(-)
+
+[33mcommit 4a084c93d0e743fe8e050a5dd66fbd171ee93f2b[m
+Author: Tiffany Alcorn <alcorn.tiff@gmail.com>
+Date:   Wed Nov 1 14:28:35 2023 -0400
+
+    moddified create transfer to actually change the amount
+
+ .../tenmo/controller/TransferController.java       |  1 [31m-[m
+ .../com/techelevator/tenmo/dao/JdbcAccountDao.java |  2 [32m+[m[31m-[m
+ .../techelevator/tenmo/dao/JdbcTransfersDao.java   | 33 [32m+++++++++++++++++[m[31m-----[m
+ 3 files changed, 27 insertions(+), 9 deletions(-)
+
+[33mcommit 4d76b19b5e3d04d9dc9c45f9aa098c3b2362403d[m
+Author: Tiffany Alcorn <alcorn.tiff@gmail.com>
+Date:   Wed Nov 1 13:58:56 2023 -0400
+
+    added account controller
+
+ .../tenmo/controller/AccountController.java        | 33 [32m+++++++++++++[m
+ .../tenmo/controller/TransferController.java       | 28 [32m+++++[m[31m------[m
+ .../com/techelevator/tenmo/dao/AccountDao.java     |  6 [32m++[m[31m-[m
+ .../com/techelevator/tenmo/dao/JdbcAccountDao.java | 56 [32m++++++++++++++++++++[m[31m--[m
+ .../techelevator/tenmo/dao/JdbcTransfersDao.java   | 46 [32m+++++++++++++++[m[31m---[m
+ .../com/techelevator/tenmo/dao/TransfersDao.java   |  4 [32m+[m[31m-[m
+ .../java/com/techelevator/tenmo/model/Account.java |  4 [32m+[m[31m-[m
+ .../java/com/techelevator/tenmo/model/History.java | 17 [31m-------[m
+ 8 files changed, 148 insertions(+), 46 deletions(-)
+
+[33mcommit 0d5c97dad539d1950edea490e112ef22136dafab[m
+Author: Logan Vesterfelt <loganvesterfelt@gmail.com>
+Date:   Wed Nov 1 12:46:39 2023 -0400
+
+    LVupdate
+
+ .../techelevator/tenmo/controller/TransferController.java | 15 [32m+++++++++++++++[m
+ .../main/java/com/techelevator/tenmo/dao/AccountDao.java  |  6 [32m++++[m[31m--[m
+ .../java/com/techelevator/tenmo/dao/JdbcAccountDao.java   | 12 [32m++++++++++++[m
+ .../java/com/techelevator/tenmo/dao/JdbcTransfersDao.java | 12 [32m++++++++++++[m
+ .../java/com/techelevator/tenmo/dao/TransfersDao.java     |  5 [32m+++++[m
+ 5 files changed, 48 insertions(+), 2 deletions(-)
+
+[33mcommit fdd3b68df7c442c995296f0cf91b3300831d4885[m
+Author: Logan Vesterfelt <loganvesterfelt@gmail.com>
+Date:   Wed Nov 1 11:26:56 2023 -0400
+
+    update
+
+ .../tenmo/controller/TransferController.java       | 36 [32m++++++++++++++++++++++[m
+ .../techelevator/tenmo/dao/JdbcTransfersDao.java   | 34 [32m+++++++++++++++++++[m[31m-[m
+ .../com/techelevator/tenmo/dao/TransfersDao.java   |  6 [32m++[m[31m--[m
+ 3 files changed, 73 insertions(+), 3 deletions(-)
+
+[33mcommit 16baa1449f32b22e650837e21a07801dafa4eed4[m
+Author: Logan Vesterfelt <loganvesterfelt@gmail.com>
+Date:   Wed Nov 1 10:33:32 2023 -0400
+
+    sql fetches
+
+ tenmo-database/tenmo.sql                           | 19 [32m+++[m[31m----[m
+ .../com/techelevator/tenmo/dao/AccountDao.java     | 10 [32m++++[m
+ .../com/techelevator/tenmo/dao/JdbcAccountDao.java | 33 [32m+++++++++++[m
+ .../techelevator/tenmo/dao/JdbcTransfersDao.java   | 66 [32m++++++++++++++++++++++[m
+ .../com/techelevator/tenmo/dao/TransfersDao.java   | 14 [32m+++++[m
+ .../java/com/techelevator/tenmo/model/Account.java | 43 [32m++++++++++++++[m
+ .../java/com/techelevator/tenmo/model/History.java |  4 [32m++[m
+ .../com/techelevator/tenmo/model/Transfer.java     | 16 [32m+++++[m[31m-[m
+ 8 files changed, 194 insertions(+), 11 deletions(-)
+
+[33mcommit 0aa54b74b48dc877d428c68219aed69faa35f9bc[m
+Author: Tiffany Alcorn <alcorn.tiff@gmail.com>
+Date:   Tue Oct 31 15:38:47 2023 -0400
+
+    models added
+
+ tenmo-database/tenmo.sql                           | 14 [32m+++++[m
+ .../java/com/techelevator/tenmo/model/History.java | 13 [32m++++[m
+ .../com/techelevator/tenmo/model/Transfer.java     | 71 [32m++++++++++++++++++++++[m
+ 3 files changed, 98 insertions(+)
+
+[33mcommit 3474681be70eee28fd86bc3d323ca307b3ab3e6d[m
+Author: mike levy <michael.levy@techelevator.com>
+Date:   Mon Oct 30 14:39:14 2023 -0400
+
+    seen repo
+
+ .gitattributes                                     |   7 [32m+[m
+ .gitignore                                         |  80 [32m+++++[m
+ tenmo-database/README.md                           |  23 [32m++[m
+ tenmo-database/tenmo.sql                           |  20 [32m++[m
+ tenmo-server/.gitignore                            |  31 [32m++[m
+ tenmo-server/README.md                             |  67 [32m+++++[m
+ tenmo-server/mvnw                                  | 322 [32m+++++++++++++++++++++[m
+ tenmo-server/mvnw.cmd                              | 182 [32m++++++++++++[m
+ tenmo-server/pom.xml                               |  90 [32m++++++[m
+ .../com/techelevator/tenmo/TenmoApplication.java   |  13 [32m+[m
+ .../tenmo/controller/AuthenticationController.java |  75 [32m+++++[m
+ .../com/techelevator/tenmo/dao/JdbcUserDao.java    | 100 [32m+++++++[m
+ .../java/com/techelevator/tenmo/dao/UserDao.java   |  17 [32m++[m
+ .../techelevator/tenmo/exception/DaoException.java |  13 [32m+[m
+ .../com/techelevator/tenmo/model/Authority.java    |  40 [32m+++[m
+ .../com/techelevator/tenmo/model/LoginDto.java     |  36 [32m+++[m
+ .../techelevator/tenmo/model/LoginResponseDto.java |  33 [32m+++[m
+ .../techelevator/tenmo/model/RegisterUserDto.java  |  32 [32m++[m
+ .../java/com/techelevator/tenmo/model/User.java    | 102 [32m+++++++[m
+ .../tenmo/security/JwtAccessDeniedHandler.java     |  22 [32m++[m
+ .../security/JwtAuthenticationEntryPoint.java      |  23 [32m++[m
+ .../techelevator/tenmo/security/SecurityUtils.java |  44 [32m+++[m
+ .../tenmo/security/UserModelDetailsService.java    |  55 [32m++++[m
+ .../tenmo/security/UserNotActivatedException.java  |  12 [32m+[m
+ .../tenmo/security/WebSecurityConfig.java          |  79 [32m+++++[m
+ .../tenmo/security/jwt/JWTConfigurer.java          |  21 [32m++[m
+ .../techelevator/tenmo/security/jwt/JWTFilter.java |  58 [32m++++[m
+ .../tenmo/security/jwt/TokenProvider.java          | 111 [32m+++++++[m
+ .../src/main/resources/application.properties      |  16 [32m+[m
+ tenmo-server/src/main/resources/banner.txt         |   5 [32m+[m
+ .../java/com/techelevator/dao/BaseDaoTests.java    |  24 [32m++[m
+ .../com/techelevator/dao/JdbcUserDaoTests.java     | 108 [32m+++++++[m
+ .../techelevator/dao/TestingDatabaseConfig.java    |  69 [32m+++++[m
+ tenmo-server/src/test/resources/test-data.sql      |  24 [32m++[m
+ 34 files changed, 1954 insertions(+)
